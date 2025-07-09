@@ -15,10 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -29,17 +26,32 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    body, html, .main, .section, .header, .footer, .btn, .form-control, h1, h2, h3, h4, h5, h6, p, a, ul, li, input, textarea, label, .navmenu, .lang-link, .section-title, .service-content, .faq-item, .faq-content, .info-item, .footer-about, .footer-links, .footer-contact {
+      font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+    }
 
+    .header {
+      background: var(--background-color) !important;
+      box-shadow: none;
+      border: none;
+    }
+  </style>
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; frame-src https://www.google.com https://maps.googleapis.com; img-src 'self' data: https:; script-src 'self' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com;">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=()">
+  
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top"
-    style="background: transparent !important; box-shadow: none !important; border: none !important;">
+  <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/Perfectus-header.png" alt="Perfectus" style="height: 64px; width: auto;">
+        <img src="assets/img/Perfectus-header.png" alt="Perfectus" style="height: 80px; width: auto;">
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -85,57 +97,49 @@
         </div>
     </section><!-- /Hero Section -->
 
-    <!-- About Section -->
+>
     <!-- About & Valores Section (Aprimorado) -->
-    <section id="about" class="about section py-5">
+    <section id="about" class="about section py-5" >
       <div class="container">
-        <div class="row gy-5 justify-content-center align-items-center flex-lg-row flex-column-reverse">
-
-          <!-- Coluna de texto principal e valores -->
-          <div class="col-lg-7 col-md-12 d-flex flex-column align-items-center text-center" data-aos="fade-up"
-            data-aos-delay="100">
+        <div class="row gy-5 justify-content-center align-items-center flex-lg-row flex-column-reverse" style="background-color: #fff;">
+          <div class="col-lg-7 col-md-12 d-flex flex-column align-items-center text-center" data-aos="fade-up" data-aos-delay="100">
             <div class="section-title mb-4 w-100">
-              <h2 style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em;">Sobre Nos</h2>
-              <p class="lead">A Perfectus, Lda é especialista em soluções de transformação digital para pequenas e
-                médias empresas. Nosso compromisso é proporcionar às PMEs as ferramentas necessárias para otimizar
-                processos, melhorar a gestão e impulsionar o crescimento com tecnologia de ponta.</p>
+              <h2 style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em;">Sobre Nós</h2>
+              <p class="lead">A Perfectus, Lda é especialista em soluções de transformação digital para pequenas e médias empresas. Nosso compromisso é proporcionar às PMEs as ferramentas necessárias para otimizar processos, melhorar a gestão e impulsionar o crescimento com tecnologia de ponta.</p>
             </div>
-
           </div>
-
- <div class="mt-5 w-100 pt-4 pb-4">
-  <h2 class="text-center" style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em; margin-bottom: 2.2rem;">Valores</h2>
-  <div class="row g-3 justify-content-center">
-              <div class="col-md-4">
-                <div class="bg-white border border-2 border-primary rounded-4 px-3 py-4 shadow-sm text-center h-100">
-                  <i class="bi bi-bar-chart-line text-primary mb-2" style="font-size:2rem;"></i><br>
-                  <strong>Foco no Resultado</strong>
-                  <p class="small mt-2 mb-0">Resultados concretos para o sucesso dos clientes.</p>
-                </div>
+        </div>
+        <div class="mt-1 w-100 pt-1 pb-1">
+          <div class="row g-3 justify-content-center">
+            <h2 class="text-center" style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em; margin-bottom: 2.2rem;">Valores</h2>
+            <div class="col-md-4">
+              <div class="bg-white border border-2 border-primary rounded-4 px-3 py-4 shadow-sm text-center h-100">
+                <i class="bi bi-bar-chart-line text-primary mb-2" style="font-size:3rem;"></i><br>
+                <strong>Foco no Resultado</strong>
+                <p class="small mt-2 mb-0">Trabalhamos com metas claras e entregas mensuráveis, sempre focados em gerar valor real e crescimento sustentável para nossos clientes.</p>
               </div>
-              <div class="col-md-4">
-                <div class="bg-white border border-2 border-success rounded-4 px-3 py-4 shadow-sm text-center h-100">
-                  <i class="bi bi-people text-success mb-2" style="font-size:2rem;"></i><br>
-                  <strong>Suporte Humano</strong>
-                  <p class="small mt-2 mb-0">Atendimento próximo, empático e acessível.</p>
-                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-white border border-2 border-success rounded-4 px-3 py-4 shadow-sm text-center h-100">
+                <i class="bi bi-people text-success mb-2" style="font-size:3rem;"></i><br>
+                <strong>Suporte Humano</strong>
+                <p class="small mt-2 mb-0">Oferecemos suporte dedicado, comunicação transparente e proximidade em cada etapa, valorizando o relacionamento humano e a confiança mútua.</p>
               </div>
-              <div class="col-md-4">
-                <div class="bg-white border border-2 border-warning rounded-4 px-3 py-4 shadow-sm text-center h-100">
-                  <i class="bi bi-shield-check text-warning mb-2" style="font-size:2rem;"></i><br>
-                  <strong>Integridade e Ética</strong>
-                  <p class="small mt-2 mb-0">Transparência, ética e confiança em cada projeto.</p>
-                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="bg-white border border-2 border-warning rounded-4 px-3 py-4 shadow-sm text-center h-100">
+                <i class="bi bi-shield-check text-warning mb-2" style="font-size:3rem;"></i><br>
+                <strong>Integridade e Ética</strong>
+                <p class="small mt-2 mb-0">Agimos com honestidade, responsabilidade e respeito, garantindo integridade em todas as decisões e relações profissionais.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      </div>
     </section><!-- /About & Valores Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+    <section id="clients" class="clients section light-background" style="background-color: #fff;">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
@@ -145,16 +149,28 @@
       <div class="container" data-aos="fade-up">
         <div class="row gy-4 justify-content-center"><!-- Centraliza os logos -->
 
-          <div class="col-xl-2 col-md-3 col-4 client-logo d-flex align-items-center justify-content-center">
+          <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
             <img src="assets/img/clients/Papelar Servicos.jpeg" class="img-fluid" alt="Papelar Servicos">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-4 client-logo d-flex align-items-center justify-content-center">
-            <img src="assets/img/clients/uniprintGrafica.jpg" class="img-fluid" alt="uniprintGrafica">
+          <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/logo-web-1.svg" class="img-fluid" alt="Ellen esv">
           </div><!-- End Client Item -->
 
-          <div class="col-xl-2 col-md-3 col-4 client-logo d-flex align-items-center justify-content-center">
+          <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/PalmtreesLogo-64.png" class="img-fluid" alt="Palma Companhia de seguros">
+          </div><!-- End Client Item -->
+          
+          <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/salcapitais-logo.svg" class="img-fluid" alt="sal capitais">
+          </div><!-- End Client Item -->
+
+          <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
             <img src="assets/img/clients/logo-image.png" class="img-fluid" alt="Blast Idustrial">
+          </div><!-- End Client Item -->
+
+           <div class="col-lg-2 col-md-2 col-2 client-logo d-flex align-items-center justify-content-center">
+            <img src="assets/img/clients/WhatsApp Image 2025-07-09 at 1.01.37 PM (1).jpeg" class="img-fluid" alt="McDermott">
           </div><!-- End Client Item -->
 
         </div>
@@ -168,11 +184,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-       <h2 style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em;">Servicos</h2>
-        <p>Oferecemos soluções tecnológicas personalizadas para pequenas e médias empresas que procuram digitalizar os
-          seus processos, melhorar a eficiência operacional e alcançar novos patamares de crescimento. Desde consultoria
-          em transformação digital até à implementação de sistemas de gestão, a nossa equipa está pronta para ajudar a
-          sua empresa a evoluir.</p>
+       <h2 style="font-size:2.5rem; font-weight:700; display: inline-block; padding: 0.4em 1.5em;">Serviços</h2>
+    
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -183,7 +196,7 @@
           <div class="col-lg-6 col-md-12" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item service-visual d-flex flex-row align-items-center gap-4 p-4 bg-white rounded shadow-sm flex-wrap flex-md-nowrap">
               <div class="service-img flex-shrink-0" style="min-width:180px;max-width:220px;">
-                <img src="assets/img/portfolio/app-1.jpg" alt="Análise e Diagnóstico" class="img-fluid rounded" style="object-fit:cover;width:100%;height:160px;">
+                <img src="assets/img/analise e diagnostico.jpg" alt="Análise e Diagnóstico" class="img-fluid rounded" style="object-fit:cover;width:100%;height:160px;">
               </div>
               <div class="service-content flex-grow-1">
                 <h3 class="mb-2">Análise e Diagnóstico</h3>
@@ -297,11 +310,10 @@
                   class="img-fluid rounded" style="object-fit:cover;width:100%;height:160px;">
               </div>
               <div class="service-content flex-grow-1">
-                <h3 class="mb-2">Fornecimento de Equipamento Informático</h3>
-                <a href="service-details.html" class="stretched-link"
-                  style="text-decoration: none; color: inherit; font-weight: 500;">
-                  <i class="bi bi-arrow-right"></i>
-                </a>
+                <h3 class="mb-2">
+                  <a style="text-decoration: none; color: inherit; font-weight: 500;">
+                    Fornecimento de Equipamento Informático 
+                </h3>
                 <p>Oferecemos equipamentos e infraestrutura de TI sob medida para o seu negócio.</p>
               </div>
             </div>
@@ -366,7 +378,7 @@
               </div><!-- End Faq item-->
 
 
-              <div class="faq-item faq-active">
+              <div class="faq-item">
                 <h3>Quais são os objetivos da Perfectus?</h3>
                 <div class="faq-content">
                   <p>A Perfectus tem como principal objetivo ser o parceiro de confiança das pequenas e médias empresas
@@ -487,45 +499,21 @@
 
   </main>
 
-  <footer id="footer" class="footer light-background">
-
+ <footer id="footer" class="footer light-background">
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Perfectus,Lda</span>
           </a>
-          <p>A Perfectus, Lda é especializada em soluções de transformação digital para pequenas e médias empresas.
-            Ajudamos os nossos clientes a otimizar processos, melhorar a gestão e crescer com o apoio de tecnologias
-            eficazes, acessíveis e adaptadas à sua realidade.</p>
+          <p>A Perfectus, Lda é especializada em soluções de transformação digital para pequenas e médias empresas. Ajudamos os nossos clientes a otimizar processos, melhorar a gestão e crescer com o apoio de tecnologias eficazes, acessíveis e adaptadas à sua realidade.</p>
           <div class="social-links d-flex mt-4">
-            <!--  <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>-->
             <a href="https://www.instagram.com/perfectus.lda/"><i class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/perfectus-lda/"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Ligações Úteis</h4>
-          <ul>
-            <li><a href="#hero">Início</a></li>
-            <li><a href="index-info.html">Sobre nos</a></li>
-            <li><a href="#services">Serviços</a></li>
-            <li><a href="#contact">Contacto</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Nossos Serviços</h4>
-          <ul>
-            <li><a>Análise e Diagnóstico</a></li>
-            <li><a>Planejamento Estratégico</a></li>
-            <li><a>Consultoria de Software</a></li>
-            <li><a>Manutenção Preventiva</a></li>
-          </ul>
-        </div>
-
+        
+       
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contacte-nos</h4>
           <p>Av. Vlademir Lenine nº1862</p>
@@ -534,17 +522,12 @@
           <p class="mt-4"><strong>Telefone:</strong> <span>+258 84 712 33 87</span></p>
           <p><strong>Email:</strong> <span>comercial@perfectus.co.mz</span></p>
         </div>
-
       </div>
     </div>
-
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Perfectus,Lda</strong> <span>Todos os direitos
-          reservados</span></p>
-      <div class="credits">
-      </div>
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Perfectus,Lda</strong> <span>Todos os direitos reservados</span></p>
+      <div class="credits"></div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->

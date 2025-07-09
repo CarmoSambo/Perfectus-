@@ -261,7 +261,7 @@ h6 {
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, var(--accent-color));
 }
 
 @media (max-width: 1200px) {
@@ -492,7 +492,7 @@ h6 {
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: white
   }
 
   .mobile-nav-active {
@@ -629,8 +629,8 @@ h6 {
 }
 
 .footer .copyright {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: var(--accent-color);
   color: var(--contrast-color);
 }
@@ -1041,10 +1041,10 @@ section,
 
 .clients .client-logo img {
   padding: 20px 40px;
-  max-width: 400px;
-  max-height: 400px;
-  width: 400px;
-  height: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  width: 250px;
+  height: 200px;
   object-fit: contain;
   display: block;
   margin: 0 auto;
@@ -1461,4 +1461,142 @@ section,
 
 .hero-img-contrast {
   filter: contrast(1.3) saturate(1.5) drop-shadow(0 0 10px #222);
+}
+
+
+/* Card no info */
+ .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: transparent;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 30px 60px rgba(0,0,0,0.2);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, transparent);
+            transition: left 0.5s;
+        }
+
+        .card:hover::before {
+            left: 100%;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .icon {
+            transform: scale(1.1) rotate(360deg);
+        }
+
+        .card h3 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .mission .icon::before { content: '🚀'; }
+        .vision .icon::before { content: '🏢'; }
+        .values .icon::before { content: '💡'; }
+
+
+/* Quem somos nos no index-info*/
+.who {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.who .contetor {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.who h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.who p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.who-services {
+    margin-top: 30px;
+}
+
+.who-services h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.who-services-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+}
+
+.who-services-list li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Adicione ao final do arquivo para garantir que o header/navmenu fique sempre visível */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: var(--background-color);
 }
