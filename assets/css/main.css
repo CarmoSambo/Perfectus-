@@ -1534,9 +1534,26 @@ section,
             font-size: 1.1rem;
         }
 
-        .mission .icon::before { content: '🚀'; }
-        .vision .icon::before { content: '🏢'; }
-        .values .icon::before { content: '💡'; }
+        .mission .icon {
+  background-image: url('../img/mission-component.svg'); /* ajuste o caminho conforme sua pasta */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vision .icon {
+  background-image: url('../img/vision-component.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.values .icon {
+  background-image: url('../img/values-component.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 
 /* Quem somos nos no index-info*/
@@ -1598,5 +1615,219 @@ section,
   position: sticky;
   top: 0;
   z-index: 1050;
-  background: var(--background-color);
+  background: var(--background-color) !important;
+  box-shadow: none;
+  border: none;
+}
+
+
+/* --- RESPONSIVIDADE GLOBAL --- */
+
+/* Container responsivo */
+.container, .container-xl, .contetor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+/* Imagens responsivas */
+img, .img-fluid {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tipografia responsiva */
+html {
+  font-size: 16px;
+}
+@media (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Ajuste de títulos e textos */
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+@media (max-width: 991px) {
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+}
+@media (max-width: 575px) {
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+  h3 { font-size: 1rem; }
+}
+
+/* Botões responsivos */
+.btn, .btn-lg, .btn-primary {
+  font-size: 1em;
+  padding: 0.5em 1.2em;
+  border-radius: 4px;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 0 60px 0;
+}
+@media (max-width: 991px) {
+  .hero {
+    padding: 80px 0 40px 0;
+  }
+}
+@media (max-width: 575px) {
+  .hero {
+    padding: 40px 0 20px 0;
+  }
+}
+
+/* Serviços e grids */
+.row, .gy-4, .cards-container, .who-services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.col-lg-6, .col-md-12, .col-lg-4, .col-lg-8 {
+  flex: 1 1 350px;
+  min-width: 260px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+@media (max-width: 991px) {
+  .col-lg-6, .col-md-12, .col-lg-4, .col-lg-8 {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+  .row, .gy-4, .cards-container, .who-services-list {
+    gap: 1rem;
+  }
+}
+
+/* Ajuste para listas de serviços */
+.who-services-list {
+  gap: 10px;
+}
+.who-services-list li {
+  flex: 1 1 180px;
+  min-width: 120px;
+  max-width: 100%;
+}
+
+/* Footer responsivo */
+.footer .footer-top {
+  padding-top: 50px;
+}
+@media (max-width: 991px) {
+  .footer .footer-top {
+    padding-top: 30px;
+  }
+  .footer .footer-about,
+  .footer .footer-contact {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+/* Ajuste para formulário de contato */
+.contact .php-email-form .row {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.contact .php-email-form .col-md-6,
+.contact .php-email-form .col-md-12 {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+/* Ajuste para info-item no contato */
+@media (max-width: 991px) {
+  .contact .info-item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+}
+
+/* Ajuste para navegação mobile */
+@media (max-width: 1199px) {
+  .navmenu ul {
+    inset: 60px 5px 5px 5px;
+    padding: 10px 0;
+  }
+}
+
+/* Ajuste para cards */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+.card {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem 1rem;
+}
+
+/* Ajuste para clientes */
+.clients .client-logo img {
+  max-width: 120px;
+  max-height: 80px;
+  width: 100%;
+  height: auto;
+  padding: 10px;
+}
+@media (max-width: 640px) {
+  .clients .client-logo img {
+    max-width: 80px;
+    max-height: 60px;
+    padding: 5px;
+  }
+}
+
+/* Ajuste para section padding */
+section, .section {
+  padding: 40px 0;
+}
+@media (max-width: 575px) {
+  section, .section {
+    padding: 20px 0;
+  }
+}
+
+/* Garante que o header/navmenu fique sempre visível e responsivo */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1050;
+  background: var(--background-color) !important;
+  box-shadow: none;
+  border: none;
+  width: 100%;
+}
+
+/* Garante que o menu não estoure a tela */
+.navmenu ul {
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+}
+
+/* Ajuste para fontes globais */
+body, html, .main, .section, .header, .footer, .btn, .form-control, h1, h2, h3, h4, h5, h6, p, a, ul, li, input, textarea, label, .navmenu, .lang-link, .section-title, .service-content, .faq-item, .faq-content, .info-item, .footer-about, .footer-links, .footer-contact {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
 }
